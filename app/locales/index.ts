@@ -1,6 +1,6 @@
-import en from "./en";
+import ptBR from "./pt-br";
 
-import type { LocaleType } from "./en";
-export type { LocaleType } from "./en";
+import type { LocaleType } from "./pt-br";
+export type { LocaleType } from "./pt-br";
 
-export default en as LocaleType;
+export default ptBR as LocaleType;

@@ -6,16 +6,16 @@ const toLlamaCloudDataSource = (pipeline: string) =>
   JSON.stringify({ pipeline });
 
 const TEMPLATE = (PERSONA: string) =>
-  `I want you to act as a ${PERSONA}. I will provide you with the context needed to solve my problem. Use intelligent, simple, and understandable language. Be concise. It is helpful to explain your thoughts step by step and with bullet points.`;
+  `Quero que você atue como um ${PERSONA}. Fornecerei o contexto necessário para resolver meu problema. Use linguagem inteligente, simples e compreensível. Seja conciso. É útil explicar seus pensamentos passo a passo e com marcadores.`;
 
 type DemoBot = Omit<Bot, "session">;
 
 export const DEMO_BOTS: DemoBot[] = [
   {
     id: "2",
-    avatar: "1f916",
-    name: "My Documents",
-    botHello: "Hello! How can I assist you today?",
+    avatar: "1f3e2",
+    name: "Informações do Condomínio",
+    botHello: "Olá! Como posso ajudá-lo com informações sobre o condomínio?",
     context: [],
     modelConfig: {
       model: "gpt-4o-mini",
@@ -28,13 +28,13 @@ export const DEMO_BOTS: DemoBot[] = [
   },
   {
     id: "3",
-    avatar: "1f5a5-fe0f",
-    name: "Red Hat Linux Expert",
-    botHello: "Hello! How can I help you with Red Hat Linux?",
+    avatar: "1f4cb",
+    name: "Regras e Regulamentos",
+    botHello: "Olá! Como posso ajudá-lo com as regras e regulamentos do condomínio?",
     context: [
       {
         role: "system",
-        content: TEMPLATE("Red Hat Linux Expert"),
+        content: TEMPLATE("especialista em regras e regulamentos de condomínios"),
         id: "demo-bot-3-system-message",
       },
     ],
@@ -49,13 +49,13 @@ export const DEMO_BOTS: DemoBot[] = [
   },
   {
     id: "4",
-    avatar: "1f454",
-    name: "Apple Watch Genius",
-    botHello: "Hello! How can I help you with Apple Watches?",
+    avatar: "1f527",
+    name: "Manutenção e Serviços",
+    botHello: "Olá! Como posso ajudá-lo com manutenção e serviços do condomínio?",
     context: [
       {
         role: "system",
-        content: TEMPLATE("Apple Genius specialized in Apple Watches"),
+        content: TEMPLATE("especialista em manutenção e serviços de condomínios"),
         id: "demo-bot-4-system-message",
       },
     ],
@@ -70,13 +70,13 @@ export const DEMO_BOTS: DemoBot[] = [
   },
   {
     id: "5",
-    avatar: "1f4da",
-    name: "German Basic Law Expert",
-    botHello: "Hello! How can I assist you today?",
+    avatar: "1f4b5",
+    name: "Financeiro e Taxas",
+    botHello: "Olá! Como posso ajudá-lo com informações financeiras e taxas do condomínio?",
     context: [
       {
         role: "system",
-        content: TEMPLATE("Lawyer specialized in the basic law of Germany"),
+        content: TEMPLATE("especialista em finanças e administração de condomínios"),
         id: "demo-bot-5-system-message",
       },
     ],
