@@ -112,11 +112,11 @@ const ptBR = {
     Backup: {
       Download: {
         Title: "Backup de Assistentes",
-        SutTitle: "Baixar o estado dos seus assistentes para um arquivo JSON",
+        SubTitle: "Baixar o estado dos seus assistentes para um arquivo JSON",
       },
       Upload: {
         Title: "Restaurar Assistentes",
-        SutTitle: "Enviar o estado dos seus assistentes de um arquivo JSON",
+        SubTitle: "Enviar o estado dos seus assistentes de um arquivo JSON",
         Success: "Assistentes restaurados com sucesso do arquivo JSON",
         Failed: (e: string) => `Erro ao importar o arquivo JSON: ${e}`,
       },
