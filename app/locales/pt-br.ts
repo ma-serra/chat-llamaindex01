@@ -26,14 +26,16 @@ const ptBR = {
     SizeExceeded: (limitSize: number) =>
       `Tamanho do arquivo excedido. Limite é ${limitSize} MB`,
     Failed: (e: string) => `Erro ao enviar arquivo: ${e}`,
-    ParseDataURLFailed: "Não foi possível ler o arquivo: Verifique se ele está criptografado.",
+    ParseDataURLFailed:
+      "Não foi possível ler o arquivo: Verifique se ele está criptografado.",
     UnknownFileType: "Tipo de arquivo desconhecido",
     ModelDoesNotSupportImages: (acceptTypes: string) =>
       `Upload de imagem não é suportado para este modelo. Envie um dos tipos suportados: ${acceptTypes}`,
   },
   Export: {
     Image: {
-      Modal: "Pressione e segure ou clique com o botão direito para salvar a imagem",
+      Modal:
+        "Pressione e segure ou clique com o botão direito para salvar a imagem",
     },
   },
   Memory: {
@@ -134,7 +136,8 @@ const ptBR = {
   },
   Copy: {
     Success: "Copiado para a área de transferência",
-    Failed: "Cópia falhou, por favor conceda permissão para acessar a área de transferência",
+    Failed:
+      "Cópia falhou, por favor conceda permissão para acessar a área de transferência",
   },
   Context: {
     Add: "Adicionar um Prompt",
@@ -177,7 +180,7 @@ const ptBR = {
     Title: "Total Braz Cubas - Assistente Virtual",
     SubTitle: "Seu assistente inteligente para o condomínio",
     Quote:
-      ""Esta ferramenta facilita o acesso às informações do condomínio e torna a comunicação muito mais eficiente."",
+      "Esta ferramenta facilita o acesso às informações do condomínio e torna a comunicação muito mais eficiente.",
     LoginLinkedinTitle: "Entrar com LinkedIn",
   },
 };
